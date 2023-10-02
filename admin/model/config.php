@@ -1,7 +1,7 @@
 <?php 
     $error = "";
     $host = "localhost";
-    $dbname = "projet.1";
+    $dbname = "projet1";
     $username = "root";
     $password = "";
     $dns = "mysql:host=$host;dbname=$dbname;charset=utf8mb4";
