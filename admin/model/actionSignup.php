@@ -1,5 +1,5 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
   extract($_POST);
   $password = password_hash($psw, PASSWORD_DEFAULT);
   $sql = "INSERT INTO admin (name, email, psw, phone) VALUES (?, ?, ?, ?)";

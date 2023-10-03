@@ -1,5 +1,5 @@
 <?php
-if($_SERVER["REQUEST_METHOD"] === "POST") {
+if($_SERVER["REQUEST_METHOD"] == "POST") {
   extract($_POST);
   $sql = "SELECT * FROM admin WHERE email = ?";
   $req = $connexion->prepare($sql);

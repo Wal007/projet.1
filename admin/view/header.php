@@ -1,5 +1,6 @@
 <?php 
 session_start();
+include("./model/config.php");
 if(!isset($_SESSION['name'])){
     header("Location: login.php");
 } else {
@@ -20,8 +21,8 @@ if(!isset($_SESSION['name'])){
         <div class="logo">Logo</div>
         <nav>
             <a href="./index.php">Dashboard</a>
-            <a href="./addArticle.php">Ajout article</a>
-            <a href="./viewArticle.php">Voir article</a>
+            <a href="./product.php">Ajout article</a>
+            <a href="./viewProduct.php">Voir article</a>
             <a href="./logout.php">Se deconecte</a>
         </nav>
     </aside>
